@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb+srv://manlikeghost:mlg201097@mern-stack-list.akzmn.mongodb.net/<dbname>?retryWrites=true&w=majority",
+    "jwtSecret": "whisperingWillo"
+}
