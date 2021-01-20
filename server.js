@@ -17,12 +17,13 @@ const db = config.get('mongoURI');
 
 // connect to mongodb
 mongoose
-    .connect(db, { 
-        useNewUrlParser: true,
-        useCreateIndex:true 
-    })
-    .then(() => console.log('Mo ti wa online...'))
-    .catch(err => console.log(err));
+	.connect(db, {
+		useUnifiedTopology: true,
+		useNewUrlParser: true,
+		useCreateIndex: true,
+	})
+	.then(() => console.log('Mo ti wa online...'))
+	.catch((err) => console.log(err));
 
 
 // Use routes/api/
